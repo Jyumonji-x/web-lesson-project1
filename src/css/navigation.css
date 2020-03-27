@@ -1,0 +1,137 @@
+nav{
+    float:left;
+}
+.HighlightedTag{
+    top:40px;
+    transition-duration: 200ms;
+    position: absolute;/*为了得到上下层叠的效果*/
+    left:5px;
+    width: 40px;
+    height: 15px;
+    font-size: 10px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: black 1px 1px 1px;
+}
+nav .navBtnFrame{
+    position: relative;/*为了得到上下层叠的效果*/
+    cursor:pointer
+}
+.navBtnContent{
+    position: absolute;/*为了得到上下层叠的效果*/
+    background-color: white;
+    padding: 5px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    box-shadow: black 0px 2px 5px;
+    border-radius: 3px;
+}
+.navBtn {
+    width: 40px;
+    height: 30px;
+}
+.navBtnTag{
+    position: absolute;/*为了得到上下层叠的效果*/
+    top:25px;
+    left:5px;
+    width: 40px;
+    height: 15px;
+    font-size: 10px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: black 1px 1px 1px;
+}
+.navBtnFrame:hover .navBtnTag{
+    top:40px;
+    transition-duration: 200ms;
+}
+#homeFrame{
+left: 160px;
+}
+#homeTag{
+    background-color: darkorange;
+    color: white;
+}
+#browseFrame{
+    left: 230px;
+}
+#browseTag{
+    background-color: darkblue;
+    color: white;
+}
+#searchFrame{
+    left:300px;
+}
+#searchTag{
+    background-color: darkgreen;
+    color: white;
+}
+#accountFrame{
+    left: 0px;
+    width: 100px;
+}
+#accountBtn{
+}
+#accountContent{
+    width: 100px;
+}
+#accountTag{
+    top:40px;
+    height:140px;
+    width: 100px;
+    text-align: center;
+    left:5px;
+    opacity: 0;
+    visibility: hidden;
+}
+#accountFrame:hover #accountTag{
+    opacity: 1;
+    transition-duration: 200ms;
+    text-align: left;
+    visibility: visible;
+}
+.accountListBtnFrame{
+    position: relative;/*为了得到上下层叠的效果*/
+    padding: 5px 10px;
+    background-color: darkgray;
+}
+.accountListBtn{font-size: 13px;
+    color: white;
+}
+.accountListFrame .navBtn{
+    height: 20px;
+    width: 20px;
+}
+#photoBtn:hover{
+    background-color: palegoldenrod;
+    transition-duration: 200ms;
+}
+#photoPage{
+    background-color: palegoldenrod;
+}
+#loginBtn:hover{
+    background-color: palegreen;
+    transition-duration: 200ms;
+}
+#loginPage{
+    background-color: palegreen;
+}
+#favorBtn:hover{
+    background-color: palevioletred;
+    transition-duration: 200ms;
+}
+#favorPage{
+    background-color: palevioletred;
+}
+#uploadBtn:hover{
+    background-color: paleturquoise;
+    transition-duration: 200ms;
+}
+#uploadPage{
+    background-color: paleturquoise;
+}

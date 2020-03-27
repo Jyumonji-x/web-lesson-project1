@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/browseMain.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/browseMenu.js"></script>
+</head>
+<body class="body">
+    <header>
+    </header>
+    <nav class="nav">
+        <div class="navBtnFrame" id="homeFrame" onclick="window.open('../web/Home.html','_self')">
+            <div class="navBtnTag" id="homeTag">
+                <a>Home</a>
+            </div>
+            <div class = "navBtnContent">
+                <img class="navBtn" src="../../img/icons/Home.svg"/>
+            </div>
+        </div>
+        <div class="navBtnFrame" id="browseFrame" onclick="window.open('../web/Browse.html','_self')">
+            <div class="HighlightedTag" id="browseTag">
+                <a>Browse</a>
+            </div>
+            <div class = "navBtnContent">
+                <img class="navBtn" src="../../img/icons/Browse.svg">
+            </div>
+        </div>
+        <div class="navBtnFrame" id="searchFrame">
+            <div class="navBtnTag" id="searchTag">
+                <a>Search</a>
+            </div>
+            <div class = "navBtnContent">
+                <img class="navBtn" src="../../img/icons/Search.svg" onclick="window.open('../web/Search.html','_self')">
+            </div>
+        </div>
+        <div class="navBtnFrame" id="accountFrame">
+            <div class="navBtnTag" id="accountTag">
+                <div class="accountListFrame">
+                    <div class = "accountListBtnFrame" id="photoBtn" onclick="window.open('../web/MyPhoto.html','_self')">
+                        <a class="accountListBtn"><img class="navBtn" src="../../img/icons/Photo.svg"> Photo</a>
+                    </div>
+                    <div class = "accountListBtnFrame" id="uploadBtn" onclick="window.open('../web/Upload.html','_self')">
+                        <a class="accountListBtn"><img class="navBtn" src="../../img/icons/Upload.svg"> Upload</a>
+                    </div>
+                    <div class = "accountListBtnFrame" id="favorBtn"  onclick="window.open('../web/Favourite.html','_self')">
+                        <a class="accountListBtn"><img class="navBtn" src="../../img/icons/Favourite.svg">Favourite</a>
+                    </div>
+                    <div class = "accountListBtnFrame" id="loginBtn" onclick="window.open('../index.html','_self')">
+                        <a class="accountListBtn"><img class="navBtn" src="../../img/icons/Login.svg"> Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "navBtnContent" id="accountContent">
+                <img class="navBtn" src="../../img/icons/MyAccount.svg" id="accountBtn">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <aside class="mainFrame browseLeft">
+            <div class="browseElement">
+                <div class="browseSearch">
+                    <input class="input" type="text"> <button class="btnSearch" onclick="alert('search!')">Search!</button><br>
+                </div>
+            </div>
+            <div class="browseElement">
+                <div class="quickSelect">
+                    <h3>Content</h3>
+                    <ul type="none">
+                        <li>
+                            <a onclick="alert('scenery!')">Scenery</a>
+                        </li>
+                        <li>
+                            <a onclick="alert('city!')">City</a>
+                        </li>
+                        <li>
+                            <a onclick="alert('people!')">People</a>
+                        </li>
+                        <li>
+                            <a onclick="alert('animal!')">Animal</a>
+                        </li>
+                        <li>
+                            <a onclick="alert('building!')">Building</a>
+                        </li>
+                        <li>
+                            <a onclick="alert('wonder!')">Wonder</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="browseElement">
+                <div class="quickSelect">
+                    <h3>Countries and Cities</h3>
+                    <ul type="none">
+                        <li>
+                            <a onclick="alert('china!')">China</a>
+                            <ul type="none" class="list">
+                                <li><a onclick="alert('shanghai!')">Shanghai</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a onclick="alert('italy!')">Italy</a>
+                            <ul type="none" class="list">
+                                <li><a onclick="alert('roma!')">Roma</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a onclick="alert('japan!')">Japan</a>
+                            <ul type="none" class="list">
+                                <li><a onclick="alert('tokyo!')">Tokyo</a></li>
+                                <li><a onclick="alert('osaka!')">Osaka</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="mainFrame browseRight">
+            <div class="browseElement">
+                <form name="form1">
+                    <select class="select">
+                        <option>Filter by Content</option>
+                        <option>Scenery</option>
+                        <option>City</option>
+                    </select>
+                    <select class="select" name="country" id="countries" onchange="selectCity()">
+                        <option value="0">Filter by Country</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Italy">Italy</option>
+                        <option value="America">America</option>
+                    </select>
+                    <select class="select" name="city">
+                        <option value="0">Filter by City</option>
+                    </select>
+                    <button onclick="alert('filter!')">Filter</button>
+                </form>
+            </div>
+            <div class="browseElement">
+                <div class="pictureList">
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                    <div class="pictureFrame">
+                        <div class="pictureShowingPicture" style="background-image:url(../../img/travel-images/normal/medium/5855221959.jpg)" onclick="window.open('../web/Details.html','_self')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageNumber">
+                <a><</a>
+                <a>1</a>
+                <a>2</a>
+                <a>3</a>
+                <a>4</a>
+                <a>5</a>
+                <a>...</a>
+                <a>></a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <p>Tongqiao Xu   No. 19302010015</p>
+        </div>
+    </footer>
+</body>
+</html>

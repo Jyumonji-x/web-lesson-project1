@@ -1,0 +1,14 @@
+.fixedButton {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+}
+#back{
+    right: 10px;
+    bottom:10px;
+}
+#up{
+    right: 10px;
+    bottom:100px;
+}

@@ -1,0 +1,97 @@
+p{
+    font-size: 13px;
+    color: white;
+}
+h1{
+    font-size: 30px;
+    color: white;
+}
+h4{
+    font-size: 20px;
+    color: white;
+}
+.blackFont{
+    color: black;
+}
+body{
+    overflow-x:hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    position: static;
+}
+.header{
+    float: left;
+    position: static;
+}
+main{
+    width: 100%;
+    padding: 60px 0 0 0;
+    margin: 0;
+    float: left;
+    height: auto;
+    position: static;
+}
+.mainFrame{
+    border-radius: 10px;
+    background-color: cadetblue;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px 10px;
+    color: white;
+    float: left;
+}
+.floatLeft{
+    float: left;
+}
+.pictureShowingFrame{
+    height: 20%;
+    width: 20%;
+}
+.pictureShowingFrame .pictureShowing{
+    width:100%;
+    height:0;
+    padding-bottom: 100%;
+    overflow:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.introductionWordsTitle{
+    display: block;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.introductionWordsContent{
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.pageNumber{
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    float: right;
+    text-align: center;
+}
+
+.content{
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.resultWords{
+    width: 80%;
+    float: left;
+}
+.fullSize{
+    width: 100%;
+}

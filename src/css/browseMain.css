@@ -1,0 +1,81 @@
+.browseLeft{
+    width: 26%;
+    margin: 2%;
+}
+.browseSearch .btnSearch{
+    width: 30%;
+    min-width: 50px;
+}
+
+.browseFrame p{
+    font-size: 20px;
+    color:white;
+}
+ul{
+    font-size: 15px;
+    color: white;
+    text-underline: none;
+}
+.quickSelect ul:hover{
+    background-color: #2d4d4f;
+    border-radius: 10px;
+    transition-duration: 200ms;
+}
+.quickSelect li:hover{
+    background-color: #000000;
+    transition-duration: 200ms;
+    border-radius: 10px;
+}
+.quickSelect ul li ul{
+    font-size: 15px;
+    color: white;
+    text-underline: none;
+    display: none;/*将 二级 菜单隐藏起来*/
+}
+.quickSelect ul li:hover ul{
+    display: block;/*当鼠标移动到一级标签后，ul即二级菜单显示出来*/
+}
+
+.browseRight{
+    width: 66%;
+    margin: 2%;
+}
+.select{
+    width: 25%;
+}
+
+.pictureList{
+    height: 500px;
+}
+.pictureFrame{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    float: left;
+    padding: 20px;
+
+}
+.pictureShowingPicture{
+    width:100%;
+    height:0;
+    padding-bottom: 100%;
+    overflow:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    border-radius: 5px;
+}
+.main .browseRight .browseElement{
+    mso-font-width: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+}
+.quickSelect a{
+    font-size: 15px;
+}

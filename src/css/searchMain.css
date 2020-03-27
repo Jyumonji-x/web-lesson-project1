@@ -1,0 +1,10 @@
+.input{
+    width: 60%;
+    border-radius: 3px;
+    border: solid rgb(95, 158, 160) 1px;
+}
+.inputBox{
+    font-size: 10px;
+    color: black;
+    width: 90%;
+}
