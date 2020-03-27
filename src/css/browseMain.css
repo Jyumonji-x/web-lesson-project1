@@ -1,6 +1,7 @@
 .browseLeft{
     width: 26%;
-    margin: 2%;
+    margin: 1%;
+    min-width: 300px;
 }
 .browseSearch .btnSearch{
     width: 30%;
@@ -37,8 +38,9 @@ ul{
 }
 
 .browseRight{
-    width: 66%;
+    width: 60%;
     margin: 2%;
+    min-width: 300px;
 }
 .select{
     width: 25%;

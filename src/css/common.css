@@ -50,13 +50,13 @@ main{
     width: 20%;
 }
 .pictureShowingFrame .pictureShowing{
-    width:100%;
-    height:0;
-    padding-bottom: 100%;
-    overflow:hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size:cover;
+    width:100%;/*该div位于一个方形div内，因此设置宽度为百分之百可以使其充满格子*/
+    height:0;/*默认高度为0，此时*/
+    padding-bottom: 100%;/*下内边距为百分之百，使得外面的方形div可以被充满*/
+    overflow:hidden;  /*溢出内容隐藏*/
+    background-position: center center; /*将图片中心位于中间*/
+    background-repeat: no-repeat; /*不重复，防止出现平铺的情况*/
+    background-size:cover; /*使背景可以完全覆盖div*/
 }
 .introductionWordsTitle{
     display: block;
