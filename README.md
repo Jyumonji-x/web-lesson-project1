@@ -2,13 +2,13 @@
 ---
 许同樵 19302010015
 ---
-##1 Github地址
+## 1 Github地址
 Github地址：https://github.com/xtq2000/webProject1
 
 Github Page：https://xtq2000.github.io/webProject1/
 
 ---
-##2 项目完成情况
+## 2 项目完成情况
 
 *导航栏界面*
 
@@ -122,7 +122,7 @@ Home条目高亮使用的是写有Home的Tag
 
 - 2、点击注册后跳转到登录界面，用户需要再次登陆才可以进入主页。
 
-###4.9 图片详情页
+### 2.9 图片详情页
 
 展示一个图片的所有信息
 
